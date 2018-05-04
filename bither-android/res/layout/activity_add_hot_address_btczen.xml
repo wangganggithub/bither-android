@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+        <ImageView
+            android:contentDescription="@string/btczen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btczen"/>
+        <EditText
+            android:inputType="textMultiLine"
+            android:hint="@string/tap_btczen_card_to_import_address"
+            android:focusable="false"
+            android:text="@string/tap_btczen_card_to_import_address"
+            android:id="@+id/edit_address_btczen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_add_btczen"
+            android:text="@string/OK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>

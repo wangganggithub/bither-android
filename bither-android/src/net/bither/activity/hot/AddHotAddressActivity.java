@@ -164,6 +164,9 @@ public class AddHotAddressActivity extends AddPrivateKeyActivity {
             if (index == 1) {
                 return getOtherFragment();
             }
+            if (index == 2) {
+                return getOtherFragment();
+            }
             return null;
         }
     };

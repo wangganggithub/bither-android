@@ -74,6 +74,7 @@ public class HotActivity extends BaseFragmentActivity {
     private TabButton tbtnMain;
     private TabButton tbtnMe;
     private FrameLayout flAddAddress;
+    private FrameLayout flAddAddress_btczen;
     private HotFragmentPagerAdapter mAdapter;
     private ViewPager mPager;
     private SyncProgressView pbSync;
@@ -178,6 +179,7 @@ public class HotActivity extends BaseFragmentActivity {
     private void initView() {
         pbSync = (SyncProgressView) findViewById(R.id.pb_sync);
         flAddAddress = (FrameLayout) findViewById(R.id.fl_add_address);
+        flAddAddress_btczen = (FrameLayout) findViewById(R.id.fl_add_addres_btczen);
 
         tbtnMain = (TabButton) findViewById(R.id.tbtn_main);
         tbtnMessage = (TabButton) findViewById(R.id.tbtn_message);
@@ -223,6 +225,24 @@ public class HotActivity extends BaseFragmentActivity {
                 startActivityForResult(intent, BitherSetting.INTENT_REF.SCAN_REQUEST_CODE);
                 overridePendingTransition(R.anim.activity_in_drop, R.anim.activity_out_back);
 
+            }
+        });
+        flAddAddress_btczen.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                boolean isPrivateKeyLimit = AddressManager.isPrivateLimit();
+                boolean isWatchOnlyLimit = AddressManager.isWatchOnlyLimit();
+                if (isPrivateKeyLimit && isWatchOnlyLimit) {
+                    DropdownMessage.showDropdownMessage(HotActivity.this,
+                            R.string.private_key_count_limit);
+                    DropdownMessage.showDropdownMessage(HotActivity.this,
+                            R.string.watch_only_address_count_limit);
+                    return;
+                }
+                Intent intent = new Intent(HotActivity.this, AddHotAddressBtczenActivity.class);
+                startActivityForResult(intent, BitherSetting.INTENT_REF.SCAN_REQUEST_CODE);
+                overridePendingTransition(R.anim.activity_in_drop, R.anim.activity_out_back);
             }
         });
 

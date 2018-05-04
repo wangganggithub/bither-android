@@ -175,7 +175,7 @@ public class DialogPasswordWithOther extends Dialog implements OnDismissListener
             if (passwordSeed == null && !password.equals(passwordConfirm) && checkPre) {
                 password.wipe();
                 passwordConfirm.wipe();
-                tvError.setText(R.string.add_address_generate_address_password_not_same);
+                tvError.setText(R.string.add_address_generate_address_password_not_samet);
                 tvError.setVisibility(View.VISIBLE);
                 etPasswordConfirm.requestFocus();
                 return;

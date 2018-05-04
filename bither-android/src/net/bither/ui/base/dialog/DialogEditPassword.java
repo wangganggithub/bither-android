@@ -137,7 +137,7 @@ public class DialogEditPassword extends Dialog implements Check.CheckListener,
             SecureCharSequence newCP = new SecureCharSequence(etNewPasswordConfirm.getText());
             if (!newP.equals(newCP)) {
                 shake();
-                tvError.setText(R.string.add_address_generate_address_password_not_same);
+                tvError.setText(R.string.add_address_generate_address_password_not_samet);
                 tvError.setVisibility(View.VISIBLE);
                 etNewPasswordConfirm.requestFocus();
                 oldP.wipe();

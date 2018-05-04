@@ -92,7 +92,7 @@
     <string name="add_address_generate_address_password_set_label">请设置钱包密码</string>
     <string name="add_address_generate_address_password_hint">密码</string>
     <string name="add_address_generate_address_password_confirm_hint">确认密码</string>
-    <string name="add_address_generate_address_password_not_same">两次输入的密码不符</string>
+    <string name="add_address_generate_address_password_not_samet">两次输入的密码不符</string>
     <string name="password_checking">正在检查密码</string>
     <string name="password_wrong">密码错误</string>
     <string name="decrypt_failed">解密失败</string>
@@ -730,4 +730,6 @@
     <string name="address_cold">冷钱包地址</string>
     <string name="error_hash">Hash 格式错误</string>
     <string name="sign_hash_input_hint">待签名的 Hash</string>
+    <string name="tap_btczen_card_to_import_address">请将BtcZen卡贴紧手机背面</string>
+    <string name="btczen">币神</string>
 </resources>

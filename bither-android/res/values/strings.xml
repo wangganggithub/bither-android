@@ -99,7 +99,7 @@
     <string name="add_address_generate_address_password_set_label">Set password of wallet</string>
     <string name="add_address_generate_address_password_hint">Password</string>
     <string name="add_address_generate_address_password_confirm_hint">Confirm Password</string>
-    <string name="add_address_generate_address_password_not_same">Passwords not same</string>
+    <string name="add_address_generate_address_password_not_samet">Passwords not same</string>
     <string name="password_checking">Checking password</string>
     <string name="password_wrong">Wrong Password</string>
     <string name="decrypt_failed">Decryption Failed</string>
@@ -766,4 +766,6 @@
     <string name="address_cold">Cold Wallet Address</string>
     <string name="error_hash">Hash format error</string>
     <string name="sign_hash_input_hint">Hash to sign</string>
+    <string name="tap_btczen_card_to_import_address">Please tap your BtcZen card to import address</string>
+    <string name="btczen">BtcZen</string>
 </resources>
